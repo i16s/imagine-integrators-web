@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>IMAGINE INTEGRATOS S.A.S. | Transformación Digital y Automatización</title>
+	<!-- Carga de Tailwind CSS para un diseño moderno y minimalista -->
+	<script src="https://cdn.tailwindcss.com"></script>
+	<style>
+		/* Definición de la paleta de colores de la empresa */
+		:root {
+			--color-primary: #1e3a8a;
+			/* Azul Corporativo - Basado en la imagen */
+			--color-secondary: #f3f4f6;
+			/* Blanco/Gris Claro */
+			--color-dark: #1f2937;
+			/* Negro/Gris Oscuro */
+		}
+
+		/* Configuración de fuentes y clases personalizadas de Tailwind */
+		.gradient-bg {
+			background-color: var(--color-primary);
+			background-image: linear-gradient(180deg, var(--color-primary) 0%, #1e40af 100%);
+		}
+
+		.text-primary {
+			color: var(--color-primary);
+		}
+
+		.bg-primary {
+			background-color: var(--color-primary);
+		}
+
+		.border-primary {
+			border-color: var(--color-primary);
+		}
+
+		/* Estilos base */
+		body {
+			font-family: 'Inter', sans-serif;
+			color: var(--color-dark);
+			background-color: white;
+		}
+
+		/* Ajuste para el logo basado en el hombre de Vitruvio (usando SVG genérico o texto) */
+		.logo-text {
+			font-weight: 800;
+			letter-spacing: 0.1rem;
+		}
+	</style>
+</head>
+
+<body class="antialiased">
+
+	<!-- 1. BARRA DE NAVEGACIÓN FIJA -->
+	<header class="sticky top-0 z-50 bg-white shadow-md">
+		<div class="container mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
+			<!-- Logo (Simulación: En un sitio real aquí iría el isologo SVG) -->
+			<a href="#" class="flex items-center space-x-2">
+				<!-- SVG simple para representar un concepto de integración/conexión -->
+				<svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+					xmlns="http://www.w3.org/2000/svg">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+						d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+				</svg>
+				<span class="logo-text text-xl text-primary">IMAGINE INTEGRATOS</span>
+			</a>
+
+			<!-- Navegación de Escritorio -->
+			<nav class="hidden md:flex space-x-8 text-sm font-medium">
+				<a href="#servicios" class="text-gray-600 hover:text-primary transition duration-300">Servicios</a>
+				<a href="#sigma" class="text-gray-600 hover:text-primary transition duration-300">Sistema SIGMA</a>
+				<a href="#nosotros" class="text-gray-600 hover:text-primary transition duration-300">Proyectos</a>
+				<a href="#contacto" class="text-primary border-b-2 border-primary pb-1">Contacto</a>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<!-- 2. SECCIÓN HERO - Foco en Chatbots (CTA Principal) -->
+		<section class="py-20 md:py-32 bg-gray-50">
+			<div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+				<p class="text-lg text-primary font-semibold mb-3">AUTOMATIZACIÓN INTELIGENTE CON IA</p>
+				<h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 mb-6 leading-tight">
+					"Transformamos tu servicio en una experiencia ágil y eficiente."
+				</h1>
+				<p class="text-xl text-gray-600 max-w-3xl mx-auto mb-10">
+					Implementamos Chatbots de **WhatsApp y Telegram** que automatizan la atención al cliente y agilizan
+					procesos empresariales, permitiéndole centrarse en el crecimiento estratégico.
+				</p>
+				<!-- CTA Principal: Contactar para Chatbot -->
+				<a href="#contacto"
+					class="inline-flex items-center justify-center px-10 py-4 border border-transparent text-base font-medium rounded-xl shadow-lg text-white bg-primary hover:bg-blue-800 transition duration-300 transform hover:scale-105">
+					Iniciar mi Proyecto de Chatbot
+					<svg class="ml-3 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+						xmlns="http://www.w3.org/2000/svg">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+					</svg>
+				</a>
+			</div>
+		</section>
+
+		<!-- 3. SECCIÓN DE SERVICIOS DESTACADOS - Beneficios de Chatbots -->
+		<section id="servicios" class="py-20 md:py-28 bg-white">
+			<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+				<h2 class="text-3xl font-bold text-center text-gray-900 mb-16">Ventajas de la Automatización con IMAGINE
+					INTEGRATOS</h2>
+
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+					<!-- Beneficio 1: Disponibilidad 24/7 -->
+					<div
+						class="bg-gray-50 p-8 rounded-xl shadow-lg border-t-4 border-primary hover:shadow-xl transition duration-300">
+						<div class="flex items-center space-x-4 mb-4">
+							<!-- Icono de Reloj -->
+							<svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+								xmlns="http://www.w3.org/2000/svg">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+									d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+							</svg>
+							<h3 class="text-xl font-semibold text-gray-800">1. Disponibilidad 24/7</h3>
+						</div>
+						<p class="text-gray-600">Atiende clientes y empleados en cualquier momento, sin depender de
+							horarios laborales. Los chatbots garantizan respuestas inmediatas y continuidad en la
+							atención.</p>
+					</div>
+
+					<!-- Beneficio 2: Reducción de costos operativos -->
+					<div
+						class="bg-gray-50 p-8 rounded-xl shadow-lg border-t-4 border-primary hover:shadow-xl transition duration-300">
+						<div class="flex items-center space-x-4 mb-4">
+							<!-- Icono de Dinero -->
+							<svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+								xmlns="http://www.w3.org/2000/svg">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+									d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z">
+								</path>
+							</svg>
+							<h3 class="text-xl font-semibold text-gray-800">2. Reducción de Costos</h3>
+						</div>
+						<p class="text-gray-600">Automatizar tareas repetitivas disminuye la necesidad de ampliar
+							equipos de soporte, optimiza recursos y reduce tiempos de respuesta.</p>
+					</div>
+
+					<!-- Beneficio 3: Personalización y eficiencia -->
+					<div
+						class="bg-gray-50 p-8 rounded-xl shadow-lg border-t-4 border-primary hover:shadow-xl transition duration-300">
+						<div class="flex items-center space-x-4 mb-4">
+							<!-- Icono de Robot/Eficiencia -->
+							<svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+								xmlns="http://www.w3.org/2000/svg">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+									d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.143 3-6.5S13.657 5 12 5s-3 4.143-3 6.5S10.343 21 12 21z">
+								</path>
+							</svg>
+							<h3 class="text-xl font-semibold text-gray-800">3. Personalización y Eficiencia</h3>
+						</div>
+						<p class="text-gray-600">Los bots ofrecen respuestas personalizadas según el contexto del
+							usuario, agilizando solicitudes, mejorando la experiencia y aumentando la satisfacción del
+							cliente.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- 4. SECCIÓN DE PRODUCTO CENTRAL - Sistema SIGMA -->
+		<section id="sigma" class="py-20 md:py-28 gradient-bg text-white">
+			<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+				<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+					<!-- Contenido del Producto SIGMA -->
+					<div class="md:order-2">
+						<h2 class="text-3xl sm:text-4xl font-extrabold mb-4">SIGMA: Sistema de Gestión Integral para
+							Telecomunicaciones</h2>
+						<p class="text-lg mb-6 opacity-90">
+							**SIGMA** es la solución web diseñada específicamente para empresas proveedoras de servicios
+							de **Televisión por Cable e Internet**. Centralice y optimice la gestión de:
+						</p>
+						<ul class="space-y-3 mb-8 text-lg">
+							<li class="flex items-start">
+								<svg class="w-6 h-6 mr-3 text-white flex-shrink-0 mt-1" fill="none"
+									stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+										d="M5 13l4 4L19 7"></path>
+								</svg>
+								Clientes, Contratos y Servicios.
+							</li>
+							<li class="flex items-start">
+								<svg class="w-6 h-6 mr-3 text-white flex-shrink-0 mt-1" fill="none"
+									stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+										d="M5 13l4 4L19 7"></path>
+								</svg>
+								Facturación, Cartera y Recaudos.
+							</li>
+							<li class="flex items-start">
+								<svg class="w-6 h-6 mr-3 text-white flex-shrink-0 mt-1" fill="none"
+									stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+										d="M5 13l4 4L19 7"></path>
+								</svg>
+								Inventarios y Asignación de Equipos.
+							</li>
+						</ul>
+						<!-- CTA Secundario: Más información sobre SIGMA -->
+						<a href="#contacto"
+							class="inline-flex items-center justify-center px-8 py-3 border border-white text-base font-medium rounded-xl text-white hover:bg-white hover:text-primary transition duration-300">
+							Solicitar Demo de SIGMA
+						</a>
+					</div>
+
+					<!-- Espacio para la imagen o mock-up de SIGMA -->
+					<div class="md:order-1 flex justify-center items-center">
+						<div
+							class="w-full max-w-sm h-64 bg-blue-900 rounded-xl shadow-2xl p-6 flex flex-col justify-center items-center opacity-80 border border-white border-opacity-30">
+							<svg class="w-16 h-16 text-white mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+								xmlns="http://www.w3.org/2000/svg">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+									d="M9.75 17L9 20l-1 1h8l-1-1v-3.25m-7.25-.75h14.5a.75.75 0 00.75-.75V7a.75.75 0 00-.75-.75H5a.75.75 0 00-.75.75v8.5c0 .414.336.75.75.75zM12 10a1 1 0 100-2 1 1 0 000 2z">
+								</path>
+							</svg>
+							<p class="text-xl font-medium text-white text-center">Software de Gestión Exclusivo para
+								Telecom</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- 5. SECCIÓN DE PROYECTOS Y ASESORÍA -->
+		<section id="nosotros" class="py-20 md:py-28 bg-white">
+			<div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+				<h2 class="text-3xl font-bold text-gray-900 mb-4">Nuestros Otros Pilares Estratégicos</h2>
+				<p class="text-xl text-gray-600 max-w-4xl mx-auto mb-12">
+					IMAGINE INTEGRATOS S.A.S. también es su aliado en proyectos de gran escala y asistencia tecnológica.
+				</p>
+				<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+					<!-- Tarjeta 1: Contratación Pública -->
+					<div class="p-8 border rounded-xl shadow-lg bg-white">
+						<h3
+							class="text-2xl font-semibold text-primary mb-3 flex items-center justify-center md:justify-start">
+							<svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+								xmlns="http://www.w3.org/2000/svg">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+									d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4">
+								</path>
+							</svg>
+							Contratación Pública
+						</h3>
+						<p class="text-gray-600 text-left">
+							Participamos activamente en proyectos educativos y de proveeduría de equipos y tecnología
+							para entidades gubernamentales y públicas, garantizando calidad y cumplimiento.
+						</p>
+					</div>
+
+					<!-- Tarjeta 2: Asesoría Tecnológica -->
+					<div class="p-8 border rounded-xl shadow-lg bg-white">
+						<h3
+							class="text-2xl font-semibold text-primary mb-3 flex items-center justify-center md:justify-start">
+							<svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+								xmlns="http://www.w3.org/2000/svg">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+									d="M9 19V6a2 2 0 00-2-2H5a2 2 0 00-2 2v13m7 0l2.5-4.5M10 19l2.5-4.5m2.5 4.5V6a2 2 0 012-2h2a2 2 0 012 2v13m-10-4.5h5">
+								</path>
+							</svg>
+							Asesoría y Asistencia
+						</h3>
+						<p class="text-gray-600 text-left">
+							Proveemos asistencia tecnológica especializada y consultoría para optimizar infraestructura
+							y procesos, ayudando a su empresa a tomar decisiones informadas sobre su futuro digital.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- 6. SECCIÓN DE CONTACTO -->
+		<section id="contacto" class="py-20 md:py-28 bg-gray-50">
+			<div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+				<h2 class="text-3xl font-bold text-gray-900 mb-4">Conversemos. Tu Transformación Inicia Aquí.</h2>
+				<p class="text-xl text-gray-600 max-w-2xl mx-auto mb-12">
+					Contáctanos hoy para una consulta sobre tu proyecto de automatización o la implementación del
+					sistema SIGMA.
+				</p>
+
+				<div
+					class="flex flex-col md:flex-row justify-center space-y-6 md:space-y-0 md:space-x-12 max-w-3xl mx-auto">
+					<!-- Email -->
+					<div class="p-6 bg-white rounded-xl shadow-md flex flex-col items-center">
+						<svg class="w-8 h-8 text-primary mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+							xmlns="http://www.w3.org/2000/svg">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+								d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+							</path>
+						</svg>
+						<h4 class="font-semibold text-lg text-gray-800">Email Corporativo</h4>
+						<a href="mailto:administracion@imagine.net.co"
+							class="text-primary hover:underline">administracion@imagine.net.co</a>
+					</div>
+					<!-- Teléfono -->
+					<div class="p-6 bg-white rounded-xl shadow-md flex flex-col items-center">
+						<svg class="w-8 h-8 text-primary mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+							xmlns="http://www.w3.org/2000/svg">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+								d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.128a11.058 11.058 0 005.429 5.429l1.128-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
+							</path>
+						</svg>
+						<h4 class="font-semibold text-lg text-gray-800">Llámanos</h4>
+						<a href="tel:+573234991743" class="text-primary hover:underline">+57 323 499 1743</a>
+					</div>
+				</div>
+
+				<!-- Ubicación -->
+				<div class="mt-8">
+					<p class="text-lg text-gray-600">
+						<strong class="text-primary">Oficina Principal:</strong> Calle 82 # 16-05, Pereira, Risaralda.
+					</p>
+				</div>
+
+			</div>
+		</section>
+	</main>
+
+	<!-- FOOTER -->
+	<footer class="bg-dark text-white py-8">
+		<div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm opacity-80">
+			<p>&copy; 2024 IMAGINE INTEGRATOS S.A.S. | Todos los derechos reservados.</p>
+			<p class="mt-1">Sitio desarrollado con tecnología web estática y Tailwind CSS, ideal para despliegue en
+				GitHub Pages.</p>
+		</div>
+	</footer>
+
+</body>
+
+</html>
